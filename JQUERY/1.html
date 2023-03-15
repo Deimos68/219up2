@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width>, initial-scale=1.0">
+    <script src="js/jquery-3.6.4.js"></script>
+    <title>test</title>
+    <style>
+        div{
+            background-color: aqua;
+            border-style: double;
+            border-color: brown;
+            color: darkolivegreen;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+<script>
+$(function(){
+    $("#btn5").click(function(){
+        var tmp = $("#out").val();
+        $("#out").val(tmp + $("#txt").val());
+        $("#div1").text(tmp + $("#txt").val());
+        $("#div2").html(tmp + $("#txt").val());
+    });
+    $("#btn6").click(function(){
+        var tmp = $("#div2").text();
+        $("#div2").remove();
+        $("#div1").after(tmp);
+    });
+})
+</script>
+</head>
+<body>
+    <h1>JQuery test 1</h1>
+    <p>hjebrks,hcniksebvklciyub</p>
+    <p>wbjfauuyswdkhciwkwfbcihn</p>
+    <p>hjebrks,hcniksebvklciyub</p>
+    <p>eghfhuehfijesygnyhgkjnebrksb</p>
+    <button id="btn">hide</button>
+    <button id="btn1">show</button>
+    <button id="btn2">hide and show</button>
+    <button id="btn3">right</button>
+    <button id="btn4">left</button>
+    <button id="btn5">button</button>
+    <button id="btn6">click</button>
+    <br>
+    <textarea name="" id="txt" cols="30" rows="10"></textarea>
+    <br>
+    <textarea name="" id="out" cols="30" rows="10"></textarea>
+    <div style="background-color: chartreuse;height: 100px; width: 100px; position: absolute;"></div>
+    <div id="div1"></div>
+    <br>
+    <div id="div2"></div>
+</body>
+<script>
+    $("#btn").click(function(){
+        $("p").hide(500);
+        })
+    $("#btn1").click(function(){
+        $('p').show(500);
+        });
+    $("#btn2").click(function(){
+        $('p').hide(500).show(500);
+        });
+    $("#btn3").click(function(){
+        $('div').animate({left:'250px'});
+        });
+    $("#btn4").click(function(){
+        $('div').animate({left:'0px'});
+        });
+</script>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.4.js"></script>
+</head>
+<body>
+    <textarea id="1" cols="20" rows="1"></textarea>+
+    <textarea id="2" cols="20" rows="1"></textarea>=
+    <textarea id="3" cols="20" rows="1"></textarea>
+    <button id="btn">Нажмите, чтобы сложить</button>
+</body>
+<script>
+$("#btn").click(function(){
+    let n1 = $("#1").val();
+    let n2 = $("#2").val();
+    
+    $("#2").after(n1 + n2)
+})
+</script>
+</html>

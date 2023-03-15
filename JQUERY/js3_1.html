@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.6.4.js"></script>
+</head>
+<body>
+    <button id="btn">Нажми на меня!</button>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean enim est, auctor vitae tempor eget, lobortis ut tellus. Phasellus convallis, mi eget pharetra pellentesque, neque odio accumsan arcu, eu auctor nisi justo nec tellus. Nullam sagittis interdum semper. Nunc sollicitudin luctus mollis. Curabitur sit amet odio justo. Etiam vel odio non sem varius accumsan. Vivamus commodo volutpat erat. Nullam eu turpis ligula. Curabitur scelerisque ligula eu nunc commodo lobortis. Curabitur eu magna viverra, scelerisque velit tincidunt, condimentum lorem. Nunc gravida mi sit amet placerat finibus. Nam sollicitudin neque lacus, a euismod nisi faucibus nec. Curabitur sit amet metus condimentum, laoreet massa a, tincidunt felis. Curabitur sit amet dolor sapien. Sed nulla mi, convallis non pellentesque eu, congue accumsan tortor. Sed ut ligula faucibus, gravida ante ut, sagittis orci.</p>
+</body>
+<script>
+$("#btn").click(function(){
+    var txt = $("p").text();
+    $("p").remove();
+    $("button").after("<h3>"+txt+"</h3>")
+})
+</script>
+</html>
