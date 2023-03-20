@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Document2</title>
     <script src="js/jquery-3.6.4.js"></script>
 </head>
 <body>
@@ -15,10 +15,9 @@
 </body>
 <script>
 $("#btn").click(function(){
-    let n1 = $("#1").val();
-    let n2 = $("#2").val();
-    
-    $("#2").after(n1 + n2)
+    let n1=Number($("#1").val());
+    let n2=Number($("#2").val());
+    $("#3").text(n1+n2)
 })
 </script>
 </html>
