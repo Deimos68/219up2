@@ -1,0 +1,10 @@
+{
+    "php.validate.executablePath": "c:\\php\\php.exe",
+    "security.workspace.trust.untrustedFiles": "open",
+    "git.enableSmartCommit": true,
+    "git.autofetch": true,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "php.debug.executablePath": ""
+}
