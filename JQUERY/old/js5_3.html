@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 5-3</title>
+    <script src="js/jquery-3.6.4.js"></script>
+<style>
+    div{
+        width: 200px;
+        height: 200px;
+        border-style: double;
+        border-color: rgb(255, 0, 0);
+    }
+</style>
+</head>
+<body>
+    <div onclick="a1()" id="div1">12345 - 12345</div>
+    <div onclick="a2()" id="div2">12345 - 12345</div>
+</body>
+<script>
+    var elems = document.getElementsByTagName('div');
+for (var i = 0; i < elems.length; i++) {
+	elems[i].addEventListener('click', setRed);
+}
+
+function setRed() {
+	this.style.background = 'red';
+	this.removeEventListener('click', setRed);
+	this.addEventListener('click', setGreen);
+}
+
+function setGreen() {
+	this.style.background = 'green';
+	this.removeEventListener('click', setGreen);
+	this.addEventListener('click', setRed);
+}
+</script>
+</html>

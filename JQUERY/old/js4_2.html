@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 4-2</title>
+    <script src="js/jquery-3.6.4.js"></script>
+</head>
+<body>
+    <button onclick="button1Click()">Заблокировать</button>
+    <button onclick="button2Click()">Отблокировать</button>
+    <input type="text" id="input" value="Какой-то текст!">
+</body>
+<script>
+    //Заблокирует элемент
+    function button1Click() {
+        var input = document.getElementById('input');
+        input.disabled = true;
+    }
+
+    //Отблокирует элемент
+    function button2Click() {
+        var input = document.getElementById('input');
+        input.disabled = false;
+    }
+</body>
+</html>
